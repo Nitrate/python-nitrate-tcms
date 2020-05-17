@@ -6,5 +6,5 @@ srpm:
 	@rpmbuild -bs \
 		--define '_srcrpmdir $(outdir)' \
 		--define '_specdir $(PWD)/Nitrate' \
-		--define '_srcdir $(PWD)' \
-		python-nitrate-tcms.spec
+		--define '_sourcedir $(PWD)' \
+		Nitrate/python-nitrate-tcms.spec
