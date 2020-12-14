@@ -1,6 +1,6 @@
 .PHONY: srpm
 srpm:
-	@dnf install -y python3-pip git rpm-build
+	@dnf install -y python3-pip git rpm-build python3-setuptools
 	@python3 -m pip download --no-deps -d . nitrate-tcms
 	@git clone https://github.com/Nitrate/Nitrate.git
 	@rpmbuild -bs \
